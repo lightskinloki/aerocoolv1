@@ -100,6 +100,8 @@ AeroCool is built by a **distributed network of independent makers**. We pay mak
 | [Replacement Parts](docs/06-replacement-parts.md) | Part catalog, pricing, and ordering |
 | [Anti-Clone Strategy](docs/07-anti-clone.md) | Registry, serialization, and IP protection |
 | [12-Month Roadmap](docs/08-roadmap.md) | From prototype to launch |
+| [Venturi Analysis](docs/09-venturi-analysis.md) | Reframing the Venturi as a zero-power atomization pump |
+| [Vehicle Application](docs/10-vehicle-application.md) | High-velocity portable cooling for vehicles without AC |
 
 ---
 
