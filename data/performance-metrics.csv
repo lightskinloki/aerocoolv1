@@ -1,0 +1,10 @@
+Condition,Wind_Speed_mph,Wind_Speed_ms,Humidity_RH,Outside_Temp_C,Outside_Temp_F,Dry_Mode_Drop_C,Dry_Mode_Drop_F,Combined_Mode_Drop_C,Combined_Mode_Drop_F,Room_Temp_C,Room_Temp_F,Tower_Height_in,Tower_Height_mm
+No wind (stack only),0,0,40,35,95,0,0,8,14,27,81,18,450
+Light breeze,4,1.79,40,35,95,1,2,9,16,26,79,18,450
+Average wind,8,3.58,40,35,95,2,4,11,20,24,75,18,450
+Fresh breeze,12,5.37,40,35,95,4,7,11,20,24,75,18,450
+Strong breeze,16,7.16,40,35,95,6,11,11,20,24,75,18,450
+Average wind (dry),8,3.58,20,35,95,2,4,15,27,20,68,18,450
+Average wind (humid),8,3.58,60,35,95,2,4,5,9,30,86,18,450
+No wind (12 inch),0,0,40,35,95,0,0,6,11,29,84,12,300
+No wind (24 inch),0,0,40,35,95,0,0,10,18,25,77,24,600

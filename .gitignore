@@ -1,0 +1,36 @@
+# CAD source files (keep STLs, ignore source)
+*.f3d
+*.f3z
+*.blend
+*.blend1
+*.step
+*.stp
+*.iges
+*.igs
+
+# Print artifacts
+*.gcode
+*.3mf
+*.factory
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Node (if we add a web app later)
+node_modules/
+
+# Python
+__pycache__/
+*.pyc
+
+# Secrets (never commit these)
+.env
+secrets.json
+credentials.json
+
+
