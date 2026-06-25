@@ -108,6 +108,7 @@ AeroCool is built by a **distributed network of independent makers**. We pay mak
 | [Vehicle Application](docs/10-vehicle-application.md) | High-velocity portable cooling for vehicles without AC |
 | [Design Philosophy](docs/11-design-philosophy.md) | **Current design framework** — post-pivot architecture, specs, and validation plan |
 | [Flat Evaporative System](docs/12-flat-model-evaporative-system.md) | **Engineering spec** — baffle cascade, fuzzy skin, layer-line orientation, seasoning |
+| [Design Evolution Log](docs/13-design-evolution-log.md) | **Why every design change happened** — abandoned ideas, pivots, and lessons learned |
 
 ---
 
