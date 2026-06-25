@@ -11,9 +11,9 @@
 
 AeroCool is a **passive cooling window insert** that drops indoor temperatures by 10–20°F (5–11°C) using zero electricity. It combines three proven cooling mechanisms:
 
-1. **Venturi Effect** — Wind accelerates through constricted funnels, dropping pressure and temperature
-2. **Evaporative Cooling** — Water channels in the expansion zone add evaporative cooling
-3. **Stack Effect** — Tower height creates natural chimney draft, pulling air even without wind
+1. **Venturi Effect** — Wind accelerates through constricted funnels, creating low-pressure suction that atomizes water into the airstream
+2. **Evaporative Cooling** — Atomized water droplets evaporate in the expansion zone, absorbing latent heat and cooling the air
+3. **Stack Effect** — Tower height creates natural chimney draft, providing gentle ventilation even when wind dies down
 
 The design is **fully modular, 3D printable, and repairable**. Every part can be replaced for $15–30. The unit lasts indefinitely.
 
@@ -44,12 +44,14 @@ The design is **fully modular, 3D printable, and repairable**. Every part can be
 ```
 OUTSIDE AIR (95°F / 35°C)
     ↓
-[Wind Catch] → [Venturi Stage 1] → [Expansion + Evap] → [Venturi Stage 2] → ...
-    ↓
-[6 Stages Total] → [Cooled Air to Room] → ROOM TEMP (75°F / 24°C)
-    ↑
-[Hot Air Exhaust] ← [Stack Effect Chimney Draft]
+[Wind Catch / Omni Scoop] → [Venturi Funnel] → [Throat Atomization] → [Expansion Chamber] → Room
+    ↑                                    ↑
+[Water Reservoir]                        [Water drawn by suction]
 ```
+
+**Flat Model:** Pure Venturi atomization — wind drives the pump, water evaporates in the chamber. Requires wind. Works best in dry, breezy climates.
+
+**Tower Model:** Stack-effect evaporative chimney — gravity-fed overflow reservoirs on each stage, continuous upward draft cools air in series. Works with or without wind, best when outside is cooler than inside.
 
 ---
 
@@ -65,8 +67,10 @@ OUTSIDE AIR (95°F / 35°C)
 | Tower width | 400–600mm | 16–24" |
 | Tower depth | 200–300mm | 8–12" |
 | Funnel inlet | 15mm | 9/16" |
-| Funnel throat | 2.5mm | 3/32" |
-| Funnel outlet | 12mm | 1/2" |
+| Funnel throat (Flat) | 4mm | 5/32" |
+| Funnel outlet (Flat) | ~10mm | ~3/8" |
+| Flat tile thickness | 25mm | 1" |
+| Tower funnel throat | 4–5mm | 5/32"–3/16" |
 | Material | PETG | PETG |
 | Print time (full tower) | 8–12 hrs | 8–12 hrs |
 | Print cost (full tower) | $15–22 | $15–22 |
@@ -102,6 +106,8 @@ AeroCool is built by a **distributed network of independent makers**. We pay mak
 | [12-Month Roadmap](docs/08-roadmap.md) | From prototype to launch |
 | [Venturi Analysis](docs/09-venturi-analysis.md) | Reframing the Venturi as a zero-power atomization pump |
 | [Vehicle Application](docs/10-vehicle-application.md) | High-velocity portable cooling for vehicles without AC |
+| [Design Philosophy](docs/11-design-philosophy.md) | **Current design framework** — post-pivot architecture, specs, and validation plan |
+| [Flat Evaporative System](docs/12-flat-model-evaporative-system.md) | **Engineering spec** — baffle cascade, fuzzy skin, layer-line orientation, seasoning |
 
 ---
 
@@ -123,7 +129,7 @@ See [data/performance-metrics.csv](data/performance-metrics.csv) for temperature
 
 **Current Phase:** Proof of Concept (Month 1 of 12)
 
-**Next Milestone:** Print and test first Venturi funnel. Measure temperature drop.
+**Next Milestone:** Print [throat test V2](cad/throat_test_v2.scad) and validate Venturi atomization — does the 4mm throat self-aspirate water when air flows? Measure temperature drop with thermocouple.
 
 **Follow our progress:** [GitHub Issues](https://github.com/lightskinloki/aerocoolv1/issues)
 
