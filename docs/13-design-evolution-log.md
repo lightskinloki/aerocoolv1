@@ -245,6 +245,39 @@ Tower Model (pending Flat test data):
 
 ---
 
+## V3.5: The Rectangular Testing Variant (Current, Test-Only)
+
+**Trigger:** Need for rapid testing in standard rectangular window frames without hex tile gap complications.
+
+**What changed:**
+- Tile shape changed from **hexagon to rectangle** (100mm × 150mm)
+- Funnel arrangement changed from **1 center + 6 ring** to **3 top row + 4 bottom row (staggered)**
+- Chamber shape changed from **80mm hex** to **90mm × 140mm rectangle**
+- Baffle insert changed from **79mm hex** to **89mm × 139mm rectangle**
+- **Zero gaps** when butted edge-to-edge in a rectangular frame
+
+**What preceded it:** V3 hexagonal tile with baffle insert.
+
+**Why it changed:**
+1. Hex tiles leave small triangular gaps when placed in rectangular window frames. This requires additional weatherstripping, foam, or custom cuts to seal.
+2. For rapid prototype testing, the developer needs a tile that drops into a standard window frame with no gap-filling required.
+3. A rectangle is faster to design, faster to print (no hexagonal facets), and easier to seal with standard foam weatherstrip.
+4. The V3.5 is **not a product** — it is a developer testbed. The hexagonal V3 remains the general design for modularity and scalability.
+
+**What we learned:**
+- The outer perimeter shape is a **testing convenience**, not a physics parameter. The funnel geometry, baffle cascade, and fuzzy skin strategy are identical between V3 and V3.5.
+- Test data from the rectangle is **directly transferable** to the hex tile. A 4°C drop in the rectangle means a 4°C drop in the hex.
+- The parametric SCAD design allows shape variation without changing the core mechanism. `TILE_WIDTH` and `TILE_LENGTH` can be adjusted for any frame size.
+- Separating the "test geometry" from the "product geometry" is a healthy development practice. The test variant can be optimized for the developer's specific window without compromising the general product design.
+
+**What was abandoned:**
+- **Nothing.** The V3 hex tile remains the general design. The V3.5 is an additive variant, not a replacement. Both exist in the repo.
+- The hex tile is not deprecated, superseded, or shelved. It is the canonical AeroCool Flat form. The rectangle is a test tool.
+
+**Status:** **Active test variant.** The V3.5 files (`aerocool_flat_tile_v3.5.stl`, `baffle_insert_v3.5.stl`) are for developer testing only. The V3 hex files remain the general product design.
+
+---
+
 ## How to Use This Document
 
 **If you are a new contributor:** Read this first. It tells you why the current design looks the way it does and what dead ends were explored.
@@ -259,4 +292,4 @@ Tower Model (pending Flat test data):
 
 *This document is updated whenever the design changes. If you are reading a version that does not match the current CAD files, check the git log for the most recent update.*
 
-*Current as of: V3 baffle cascade (2026-06-25)*
+*Current as of: V3.5 rectangular test variant (2026-06-26)*

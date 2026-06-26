@@ -109,6 +109,7 @@ AeroCool is built by a **distributed network of independent makers**. We pay mak
 | [Design Philosophy](docs/11-design-philosophy.md) | **Current design framework** — post-pivot architecture, specs, and validation plan |
 | [Flat Evaporative System](docs/12-flat-model-evaporative-system.md) | **Engineering spec** — baffle cascade, fuzzy skin, layer-line orientation, seasoning |
 | [Design Evolution Log](docs/13-design-evolution-log.md) | **Why every design change happened** — abandoned ideas, pivots, and lessons learned |
+| [V3.5 Rectangular Test Variant](docs/14-v3.5-rectangular-test-variant.md) | **Developer test build** — rectangular window insert for rapid testing, not the general product |
 
 ---
 
